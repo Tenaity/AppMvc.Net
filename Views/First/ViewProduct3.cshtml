@@ -1,0 +1,14 @@
+@using App.Models
+@model App.Models.ProductModel
+@{
+    var product = ViewData["product"] as ProductModel;
+}
+<p>@ViewData["Title"]</p>
+<div class="card bg-danger text-white">
+    <h1 class="card-header">Ten : @product.Name</h1>
+    <div class="card-body">
+        <p class="card-text">
+           Gia: @product.Price
+        </p>
+    </div>
+</div>
